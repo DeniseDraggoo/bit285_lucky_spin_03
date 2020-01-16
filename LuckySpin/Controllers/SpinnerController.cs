@@ -14,6 +14,8 @@ namespace LuckySpin.Controllers
             int b = random.Next(1, 10);
             int c = random.Next(1, 10);
 
+            LuckySpin.Models.Spin spin = new LuckySpin.Models.Spin();
+
             // Load up the ViewBag for use by the Spinner View "Index.cshtml"
             ViewBag.ImgDisplay = (a == luck || b == luck || c == luck)?"block":"none";
             ViewBag.A = a;

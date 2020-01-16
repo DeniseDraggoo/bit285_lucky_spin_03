@@ -7,8 +7,10 @@
 </head>
 <body>
     <button onclick='history.go(0)'>Spin</button>
-    <div>@ViewBag.A</div><div>@ViewBag.B</div><div>@ViewBag.C</div>
-    <h1> Lucky @ViewBag.luck </h1>
-    <img src="/Images/LuckySpinCoins.jpg" alt="Coins" style="display:@ViewBag.ImgDisplay" />
+    <div>@Model models.A</div>
+    <div> @Model models.B </div >
+    <div> @Model models.C </div >
+    <h1> Lucky @Model models.spin </h1>
+    <img src="/Images/LuckySpinCoins.jpg" alt="Coins" style="display:@Model.ImgDisplay" />
 </body>
 </html>
